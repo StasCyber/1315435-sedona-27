@@ -8,14 +8,15 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html">
-          <img src="img/index-logo.svg" wihth="138" height="71" alt="Логотип туристического городка Седона">
+        <a class="main-header-logo">
+          <img src="img/logo.svg" width="138" height="71" alt="Логотип туристического городка Седона">
+            <!--добавил изображение логотипа в формате SVG-->
         </a>
         <ul class="site-navigation">
-          <li><a href="info.html">Информация</a></li>
-          <li><a href="galery.html">Фото и видео</a></li><!--раздел еще не создан, т.к. макета не нашел, нужно ли его делать или просто заглушку в ссылке прописать?-->
-          <li><a href="siteMap.html">Карта штата</a></li>
-          <li class="site-navigation-current"><a href="hotels.html">Гостинницы</a></li>
+          <li class="menu-info"><a href="info.html">Информация</a></li>
+          <li class="menu-photo"><a href="galery.html">Фото и видео</a></li>
+          <li class="menu-map"><a href="siteMap.html">Карта штата</a></li>
+          <li class="menu-hotels"><a href="hotels.html">Гостинницы</a></li>
         </ul>
       </nav>
     </header>
@@ -23,8 +24,7 @@
     <main>
         
       <section class="filters">
-        <h2 сlass="visually-hidden">Фильтр жилья</h2><!--Данный тег отображаться не будет-->
-        <!--здесь будет форма-->      
+        <h2 сlass="visually-hidden">Фильтр жилья</h2>      
       </section>
 
       <section class="results">
@@ -39,37 +39,49 @@
             <ul>
                 <li><a href="#">По рейтингу</a></li>
             </ul>
-            <!--Не понял, как реализовать в этом блоке стрелки по сортировке (справа в блоке)-->
       </section>
 
       <section class="catalog">
+        <h2 class="visually">Список домов для аренды</h2>
         <ul>
-            <li>
-                <h3>AMARA RESORT & SPA</h3>
-                <img src="amara.jpg" width="135" height="90" alt="Гостинница Amara Resort & SPA">
-                <p>ГОСТИННИЦА</p>
-                <p><a class="button" href="#">Подробнее</a></p>
-                <p><a class="button" href="#">Забронировать</a></p>
-                <p>Рейтинг: 8,5</p>
-                <!--Не совсем понял, как реализовать звёздочки-->
+            <p>
+              <img src="amara.jpg" width="135" height="90" alt="Гостинница Amara Resort & SPA">
+              <h3>AMARA RESORT & SPA</h3>
+              <p>ГОСТИННИЦА</p>
+              <p><a class="button" href="#">Подробнее</a></p>
+              <p><a class="button" href="#">Забронировать</a></p>
+              <p>Рейтинг: 8,5</p>
+              <p>
+                <span><img src="img/star.svg" width="19" height="17" alt="Звёздочка"></span>
+                <span><img src="img/star.svg" width="19" height="17" alt="Звёздочка"></span>
+                <span><img src="img/star.svg" width="19" height="17" alt="Звёздочка"></span>
+                <span><img src="img/star.svg" width="19" height="17" alt="Звёздочка"></span>
+              </p>
             </li>
             <li>
-                <h3>DESERT QUAIL INN</h3>
-                <img src="desert.jpg" width="135" height="90" alt="Гостинница Amara Resort & SPA">
-                <p>МОТЕЛЬ</p>
-                <p><a class="button" href="#">Подробнее</a></p>
-                <p><a class="button" href="#">Забронировать</a></p>
-                <p>Рейтинг: 8,9</p>
-                <!--Не совсем понял, как реализовать звёздочки-->
+              <img src="desert.jpg" width="135" height="90" alt="Гостинница Amara Resort & SPA">
+              <h3>DESERT QUAIL INN</h3>
+              <p>МОТЕЛЬ</p>
+              <p><a class="button" href="#">Подробнее</a></p>
+              <p><a class="button" href="#">Забронировать</a></p>
+              <p>Рейтинг: 8,9</p>
+              <p>
+                <span><img src="img/star.svg" width="19" height="17" alt="Звёздочка"></span>
+                <span><img src="img/star.svg" width="19" height="17" alt="Звёздочка"></span>
+                <span><img src="img/star.svg" width="19" height="17" alt="Звёздочка"></span>
+              </p>
             </li>
             <li>
-                <h3>VILLAS AT POCO DIABLO</h3>
-                <img src="amara.jpg" width="135" height="90" alt="Гостинница Amara Resort & SPA">
-                <p>АПАРТАМЕНТЫ</p>
-                <p><a class="button" href="#">Подробнее</a></p>
-                <p><a class="button" href="#">Забронировать</a></p>
-                <p>Рейтинг: 9.2</p>
-                <!--Не совсем понял, как реализовать звёздочки-->
+              <img src="amara.jpg" width="135" height="90" alt="Гостинница Amara Resort & SPA">
+              <h3>VILLAS AT POCO DIABLO</h3>
+              <p>АПАРТАМЕНТЫ</p>
+              <p><a class="button" href="#">Подробнее</a></p>
+              <p><a class="button" href="#">Забронировать</a></p>
+              <p>Рейтинг: 9.2</p>
+              <p>
+                <span><img src="img/star.svg" width="19" height="17" alt="Звёздочка"></span>
+                <span><img src="img/star.svg" width="19" height="17" alt="Звёздочка"></span>
+              </p>
             </li>
         </ul>
       </section>
@@ -78,21 +90,21 @@
     </main>    
     
     <footer>
-        <p>#VISITSEDONA</p>
-        <p>ТЕЛ: +7(495)666-01-66</p>
-  
-        <div>
-          <ul>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">YouTube</a></li>
-          </ul>
-        </div>
-  
-        <p>WEBSITE BY</p>
-        <a class="footer-logo" href="http://htmlacademy.ru">
-          <img src="logo-htmlacademy.png" width="115" height="41" alt="Логотип HTML_Academy">
-        </a>
-      </footer>
+      <p>#VISITSEDONA</p>
+      <p>ТЕЛ: +7(495)666-01-66</p>
+
+      <div>
+        <ul>
+          <li><a href="#"><img src="img/twitter.svg" width="11" height="11" alt="Twitter"></a></li>
+          <li><a href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Facebook"></a></li>
+          <li><a href="#"><img src="img/youtube.svg" width="20" height="16" alt="YouTube"></a></li>
+        </ul>
+      </div>
+
+      <p>WEBSITE BY</p>
+      <a class="footer-logo" href="http://htmlacademy.ru">
+        <img src="logo-htmlacademy.png" width="115" height="41" alt="Логотип HTML_Academy">
+      </a>
+    </footer>
   </body>
 </html>
