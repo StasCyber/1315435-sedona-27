@@ -8,114 +8,117 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html"><!--прописать значение ссылки на второстепенных страницах, чтобы вела на главную-->
-          <img src="img/index-logo.svg" width="138" height="71" alt="Логотип туристического городка Седона">
+        <a class="main-header-logo">
+          <img src="img/logo.svg" width="138" height="71" alt="Доготип">
+            <!--добавил изображение логотипа в формате SVG-->
         </a>
         <ul class="site-navigation">
-          <li><a href="info.html">Информация</a></li>
-          <li><a href="galery.html">Фото и видео</a></li><!--раздел еще не создан, т.к. макета не нашел, нужно ли его делать или просто заглушку в ссылке прописать?-->
-          <li><a href="siteMap.html">Карта штата</a></li>
-          <li><a href="hotels.html">Гостинницы</a></li>
+          <li class="menu-info"><a href="info.html">Информация</a></li>
+          <li class="menu-photo"><a href="galery.html">Фото и видео</a></li>
+          <li class="menu-map"><a href="siteMap.html">Карта штата</a></li>
+          <li class="menu-hotels"><a href="hotels.html">Гостинницы</a></li>
         </ul>
       </nav>
 
     </header>
 
     <main>
-      
-      <div><!--Не совсем понятно, как разметить данный блок, т.к. в макете, каждая буква отображена как изображение, а не как текст, пока разметил как текст (но непонятно, какие шрифты подобрать чтобы было похоже)-->
-        <h2>Wellcome</h2> 
-        <p>- to the gorgeous -</p>
-        
-        <div>
-          <h2>Sedona</h2>
-          <p>Because the Grand Canyon sucks!</p>
+      <section class="welcome">
+        <h2 class="visually-hidden">Welcome</h2> 
+        <img class="main-photo">
+        <img class="intro-svg" src="img/welcome.svg" width="458" height="352" alt="Приветствие на главном экране">
+          <!--Добавил SVG изображение welcome sedona-->
+        <div class="polygon">
+          <img src="img/polygon.svg" width="1200" height="57" alt="Разделитель главного экрана">
+          <!--Добавил изображение разделителя-->
         </div>
+      </section>  
 
-      </div>
-
-      <div class="polygon">
-        <!--Это блок, который отделяет блок Welkome от блока Content-->
-      </div>
-
-      <div>
+      <section class="intro">
         <h1>СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h1>
         <p>РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ ЧЕМ ГРАНД КАНЬОН.</p>
-      </div>
+      </section>
 
       <section>
-        <h2>Преимущества</h2> <!--Этот заголовок не будет отображаться-->
-        <ul>
-          <li class="blue-background">
-            <h3>НАСТОЯЩИЙ ГОРОДОК</h3>
-            <p>- №1 -</p>
-            <p>СЕДОНА - НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ<br> ТЕЧЁТ СВОЯ ЖИЗНЬ</p>
+        <h2 class="visually-hidden">Преимущества</h2>
+        <ol>
+          <li class="advantage1">
+            <div>
+              <h3>НАСТОЯЩИЙ ГОРОДОК</h3>
+              <p>- №1 -</p>
+              <p>СЕДОНА - НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ<br> ТЕЧЁТ СВОЯ ЖИЗНЬ</p>
+              <figure> 
+                <img src="layer10.jpg" width="800" height="323" alt="Sedona - городок, в котором течёт своя жизнь.">
+              </figure>
+            </div>
+
+            <section>
+              <h2 class="visually-hidden">Особенности городка Седона</h2>
+              <ul>
+                <li>
+                  <h3>ЖИЛЬЁ</h3>
+                  <p>РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЁ КАК В КИНО!</p>
+                  <img src="icon-1.png" width="75" height="70" alt="Жильё">
+                </li>
+                <li>
+                  <h3>ЕДА</h3>
+                  <p>ВСЕГДА ЗАКАЗЫАЙТЕ ФИРМЕННЫЙ БУРГЕР, ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
+                  <img src="icon-2.png" width="75" height="70" alt="Еда">
+                </li>
+                <li>
+                  <h3>СУВЕНИРЫ</h3>
+                  <p>НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО ПРОИЗВОДСТВА!</p>
+                  <img src="icon-3.png" width="75" height="70" alt="Сувениры">
+                </li>
+              </ul>
+            </section>
           </li>
           
-          <li class="blue-background">
-            <h3>ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
-            <p>- №2 -</p>
-            <p>ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ КОНЕЧНО<br> ВЫ ОСМЕЛИТЕСЬ</p>
+          <li class="advantage2">
+            <div>
+              <h3>ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
+              <p>- №2 -</p>
+              <p>ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ КОНЕЧНО<br> ВЫ ОСМЕЛИТЕСЬ</p>
+              <figure> 
+                <img src="layer5.jpg" width="800" height="324" alt="Мост дьявола.">
+              </figure>
+            </div> 
           </li>
 
-          <li class="white-background">
+          <li class="advantage3">
             <h3>НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
             <p>- №3 -</p>
             <p>ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ<br> НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
           </li>
 
-          <li class="white-background">
+          <li class="advantage4">
             <h3>КРАСИВАЯ ДОРОГА</h3>
             <p>- №4 -</p>
             <p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ<br> НЕ СКУЧНО</p>
           </li>
 
-          <li class="white-background">
+          <li class="advantage5">
             <h3>МАЛО ТУРИСТОВ</h3>
             <p>- №5 -</p>
             <p>БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН<br> И ТОЛПИТСЯ ТАМ</p>
           </li>
-        </ul>
+        </ol>
       </section>
-
-      <figure> <!--Это изображение относится к элементу списка выше Причиине №1-->
-        <img src="layer10.jpg" width="800" height="323" alt="Sedona - городок, в котором течёт своя жизнь.">
-      </figure>
-
-       <figure> <!--Это изображение относится к элементу списка выше Причиине №2-->
-        <img src="layer5.jpg" width="800" height="324" alt="Мост дьявола.">
-       </figure>
        
       <section>
-        <h2>Особенности городка Седона</h2><!--Этот заголовок не будет отображаться-->
-        <ul>
-          <li>
-            <h3>ЖИЛЬЁ</h3>
-            <p>РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЁ КАК В КИНО!</p>
-            <img src="icon-1.png" width="75" height="70" alt="Жильё">
-          </li>
-          <li>
-            <h3>ЕДА</h3>
-            <p>ВСЕГДА ЗАКАЗЫАЙТЕ ФИРМЕННЫЙ БУРГЕР, ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
-            <img src="icon-2.png" width="75" height="70" alt="Еда">
-          </li>
-          <li>
-            <h3>СУВЕНИРЫ</h3>
-            <p>НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО ПРОИЗВОДСТВА!</p>
-            <img src="icon-3.png" width="75" height="70" alt="Сувениры">
-          </li>
-        </ul>
-      </section>
-
-      <div>
-        <h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
-        <p>УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, <br> И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИННИЦ В СЕДОНЕ</p>
-      </div>
-      
-      <section>
-        <h2>ПОИСК ГОСТИННИЦЫ В СЕДОНЕ</h2>
-        <form></form><!--Здесь будет форма-->
-      </section>  
+        <div>
+          <p>ЗАИНТЕРЕСОВАЛИСЬ?</p>
+          <p>УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, <br> И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИННИЦ В СЕДОНЕ</p>
+        </div>
+        <div>
+          <button type="button" class="button-search-index">Поиск гостинницы в Седоне</button>
+          <form>
+            <img src="img/calendar.svg" width="21" height="23" alt="Календарик">
+            <img src="img/minus-form.svg" width="12" height="3" alt="Убавить">
+            <img src="img/plus-form.svg" width="11" height="11" alt="Добавить">
+          </form><!--Здесь будет форма-->
+        </div>
+        </section> 
 
       <div> 
         <!--Здесь будет блок с картой. (насколько я понял, будет вставляться скрипт JS)-->
@@ -128,9 +131,9 @@
 
       <div>
         <ul>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">YouTube</a></li>
+          <li><a href="#"><img src="img/twitter.svg" width="11" height="11" alt="Twitter"></a></li>
+          <li><a href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Facebook"></a></li>
+          <li><a href="#"><img src="img/youtube.svg" width="20" height="16" alt="YouTube"></a></li>
         </ul>
       </div>
 
@@ -138,14 +141,7 @@
       <a class="footer-logo" href="http://htmlacademy.ru">
         <img src="logo-htmlacademy.png" width="115" height="41" alt="Логотип HTML_Academy">
       </a>
-    </footer>
-    
-    
-
+    </footer>  
   </body>
 </html>
 
-<!--Вопросы?
-  1 Можно ли в тег <ul> вставить между тегами <li> тег <figure>? Или лучше вынести <figure> за тег <ul>?
-  2
--->
