@@ -111,11 +111,36 @@
         </div>
         <div>
           <button type="button" class="button-search-index">Поиск гостинницы в Седоне</button>
-          <form>
-            <img src="img/calendar.svg" width="21" height="23" alt="Календарик">
-            <img src="img/minus_form.svg" width="12" height="3" alt="Убавить">
-            <img src="img/plus_form.svg" width="11" height="11" alt="Добавить">
-          </form><!--Здесь будет форма-->
+          <form method="GET" action="https://echo.htmlacademy.ru">
+            <p><label for="arrival-date">Дата заезда:</label>
+              <input type="text" id="arrival-date" placeholder="дд мм гггг" autofocus>
+            <img src="img/calendar.svg" width="21" height="23" alt="Календарик"></p>
+            <!--Так понимаю у этих инпутов должен быть type="date" но тогда не пойму как календарик вставить в поле-->
+            <p><label for="date-of-departure">Дата выезда:</label>
+              <input type="text" id="date-of-departure" placeholder="дд мм гггг">
+              <img src="img/calendar.svg" width="21" height="23" alt="Календарик"></p>
+            <p>
+              <label>Взрослые:</label>
+              <button type="button">
+                <img src="img/minus_form.svg" width="12" height="3" alt="Убавить">
+              </button>
+              <output name="sum">1</output>
+                <button type="button">
+                  <img src="img/plus_form.svg" width="11" height="11" alt="Добавить">
+                </button>
+            </p>
+            <p>
+              <label>Дети:</label>
+              <button type="button">
+              <img src="img/minus_form.svg" width="12" height="3" alt="Убавить">
+              </button>
+              <output name="sum">1</output>
+              <button type="button">
+              <img src="img/plus_form.svg" width="11" height="11" alt="Добавить">
+              </button>
+            </p>
+            <button type="submit">Найти</button>
+          </form>
         </div>
         </section> 
 
@@ -126,7 +151,7 @@
 
     <footer>
       <p>#VISITSEDONA</p>
-      <p>ТЕЛ: +7(495)666-01-66</p>
+      <h2>ТЕЛ: +7(495)666-01-66</h2>
 
       <div>
         <ul>
