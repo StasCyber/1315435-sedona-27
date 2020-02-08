@@ -3,19 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-  <body>
+  <body class="inner-page">
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo">
-          <img src="img/logo.svg" width="138" height="71" alt="Логотип туристического городка Седона">
-            <!--добавил изображение логотипа в формате SVG-->
+        <a class="logo">
+          <img src="img/logo.svg" width="138" height="71" alt="Доготип">
         </a>
         <ul class="site-navigation">
-          <li class="menu-info"><a href="info.html">Информация</a></li>
-          <li class="menu-photo"><a href="galery.html">Фото и видео</a></li>
-          <li class="menu-map"><a href="siteMap.html">Карта штата</a></li>
-          <li class="menu-hotels"><a href="#">Гостинницы</a></li>
+          <li class="menu-item"><a href="info.html">Информация</a></li>
+          <li class="menu-item"><a href="galery.html">Фото и видео</a></li>
+          <li class="menu-item"><a href="siteMap.html">Карта штата</a></li>
+          <li class="menu-item"><a href="hotels.html">Гостинницы</a></li>
         </ul>
       </nav>
     </header>
@@ -26,10 +28,11 @@
         <!--Здесь будет фильтр жилья-->   
       </section>
 
+      <!-- стили не прописаны к этому блоку
       <section class="results">
         <h2>Найдено: 3</h2>
         <h3>Сортировка:</h3>
-            <ul>
+            <ul class="list-filter">
                 <li><a href="#">По цене</a></li>
             </ul>
             <ul>
@@ -39,6 +42,7 @@
                 <li><a href="#">По рейтингу</a></li>
             </ul>
       </section>
+    -->
 
       <section class="catalog">
         <h2 class="visually">Список домов для аренды</h2>
@@ -47,8 +51,9 @@
               <img src="img/amara.jpg" width="135" height="90" alt="Гостинница Amara Resort & SPA">
               <h3>AMARA RESORT & SPA</h3>
               <p>ГОСТИННИЦА</p>
-              <p><button type="button">Подробнее</button></p>
-              <p><button type="button">Забронировать</button></p>
+              <p>От 4000 р.</p>
+              <p><button type="button" class="more">Подробнее</button></p>
+              <p><button type="button" class="reserve">Забронировать</button></p>
               <p>Рейтинг: 8,5</p>
               <p>
                 <span><img src="img/star.svg" width="19" height="17" alt="Звёздочка"></span>
@@ -61,8 +66,9 @@
               <img src="img/desert.jpg" width="135" height="90" alt="Гостинница Amara Resort & SPA">
               <h3>DESERT QUAIL INN</h3>
               <p>МОТЕЛЬ</p>
-              <p><button type="button">Подробнее</button></p>
-              <p><button type="button">Забронировать</button></p>
+              <p>От 3000 р.</p>
+              <p><button type="button" class="more">Подробнее</button></p>
+              <p><button type="button" class="reserve">Забронировать</button></p>
               <p>Рейтинг: 8,9</p>
               <p>
                 <span><img src="img/star.svg" width="19" height="17" alt="Звёздочка"></span>
@@ -74,8 +80,9 @@
               <img src="img/amara.jpg" width="135" height="90" alt="Гостинница Amara Resort & SPA">
               <h3>VILLAS AT POCO DIABLO</h3>
               <p>АПАРТАМЕНТЫ</p>
-              <p><button type="button">Подробнее</button></p>
-              <p><button type="button">Забронировать</button></p>
+              <p>От 2000 р.</p>
+              <p><button type="button" class="more">Подробнее</button></p>
+              <p><button type="button" class="reserve">Забронировать</button></p>
               <p>Рейтинг: 9.2</p>
               <p>
                 <span><img src="img/star.svg" width="19" height="17" alt="Звёздочка"></span>
@@ -89,11 +96,13 @@
     </main>    
     
     <footer>
-      <p>#VISITSEDONA</p>
-      <h2>ТЕЛ: +7(495)666-01-66</h2>
+      <div class="contacts">
+        <p>#VISITSEDONA</p>
+        <p>ТЕЛ: +7(495)666-01-66</p>
+      </div>
 
-      <div>
-        <ul>
+      <div class="social">
+        <ul class="social-list">
           <li><a href="#"><img src="img/twitter.svg" width="11" height="11" alt="Twitter"></a></li>
           <li><a href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Facebook"></a></li>
           <li><a href="#"><img src="img/youtube.svg" width="20" height="16" alt="YouTube"></a></li>
