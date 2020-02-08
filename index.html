@@ -3,45 +3,44 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo">
+        <a class="logo">
           <img src="img/logo.svg" width="138" height="71" alt="Доготип">
-            <!--добавил изображение логотипа в формате SVG-->
         </a>
         <ul class="site-navigation">
-          <li class="menu-info"><a href="info.html">Информация</a></li>
-          <li class="menu-photo"><a href="galery.html">Фото и видео</a></li>
-          <li class="menu-map"><a href="siteMap.html">Карта штата</a></li>
-          <li class="menu-hotels"><a href="hotels.html">Гостинницы</a></li>
+          <li class="menu-item"><a href="info.html">Информация</a></li>
+          <li class="menu-item"><a href="galery.html">Фото и видео</a></li>
+          <li class="menu-item"><a href="siteMap.html">Карта штата</a></li>
+          <li class="menu-item"><a href="hotels.html">Гостинницы</a></li>
         </ul>
       </nav>
-
     </header>
 
     <main>
       <section class="welcome">
         <h2 class="visually-hidden">Welcome</h2> 
         <img class="intro-svg" src="img/welcome.svg" width="458" height="352" alt="Приветствие на главном экране">
-          <!--Добавил SVG изображение welcome sedona-->
         <div class="polygon">
           <img src="img/polygon.svg" width="1200" height="57" alt="Разделитель главного экрана">
-          <!--Добавил изображение разделителя-->
         </div>
       </section>  
 
       <section class="intro">
-        <h1>СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h1>
-        <p>РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ ЧЕМ ГРАНД КАНЬОН.</p>
+        <h1>Седона - небольшой городок, заслуживающий большего!</h1>
+        <p>Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон.</p>
       </section>
 
-      <section>
+      <section class="feautures">
         <h2 class="visually-hidden">Преимущества</h2>
-        <ol>
-          <li class="advantage1">
-            <div>
+        <ol class="feautures-list">
+          <li class="feauture-item">
+            <div class="block">
               <h3>НАСТОЯЩИЙ ГОРОДОК</h3>
               <p>- №1 -</p>
               <p>СЕДОНА - НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ<br> ТЕЧЁТ СВОЯ ЖИЗНЬ</p>
@@ -50,30 +49,30 @@
               </figure>
             </div>
 
-            <section>
+            <section class="recomendations">
               <h2 class="visually-hidden">Особенности городка Седона</h2>
-              <ul>
-                <li>
+              <ul class="recomend-list">
+                <li class="recomend-item">
+                  <img src="img/icon-1.png" width="75" height="70" alt="Жильё">
                   <h3>ЖИЛЬЁ</h3>
                   <p>РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЁ КАК В КИНО!</p>
-                  <img src="img/icon-1.png" width="75" height="70" alt="Жильё">
                 </li>
-                <li>
+                <li class="recomend-item">
+                  <img src="img/icon-2.png" width="75" height="70" alt="Еда">
                   <h3>ЕДА</h3>
                   <p>ВСЕГДА ЗАКАЗЫАЙТЕ ФИРМЕННЫЙ БУРГЕР, ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
-                  <img src="img/icon-2.png" width="75" height="70" alt="Еда">
                 </li>
-                <li>
+                <li class="recomend-item">
+                  <img src="img/icon-3.png" width="75" height="70" alt="Сувениры">
                   <h3>СУВЕНИРЫ</h3>
                   <p>НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО ПРОИЗВОДСТВА!</p>
-                  <img src="img/icon-3.png" width="75" height="70" alt="Сувениры">
                 </li>
               </ul>
             </section>
           </li>
           
-          <li class="advantage2">
-            <div>
+          <li class="feauture-item">
+            <div class="block">
               <h3>ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
               <p>- №2 -</p>
               <p>ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ КОНЕЧНО<br> ВЫ ОСМЕЛИТЕСЬ</p>
@@ -83,19 +82,19 @@
             </div> 
           </li>
 
-          <li class="advantage3">
+          <li class="feauture-item">
             <h3>НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
             <p>- №3 -</p>
             <p>ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ<br> НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
           </li>
 
-          <li class="advantage4">
+          <li class="feauture-item">
             <h3>КРАСИВАЯ ДОРОГА</h3>
             <p>- №4 -</p>
             <p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ<br> НЕ СКУЧНО</p>
           </li>
 
-          <li class="advantage5">
+          <li class="feauture-item">
             <h3>МАЛО ТУРИСТОВ</h3>
             <p>- №5 -</p>
             <p>БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН<br> И ТОЛПИТСЯ ТАМ</p>
@@ -103,58 +102,61 @@
         </ol>
       </section>
        
-      <section>
+      <section class="form">
         <h2 class="visually-hidden">Форма заявки</h2>
-        <div>
+        <div class="pre-form">
           <p>ЗАИНТЕРЕСОВАЛИСЬ?</p>
           <p>УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, <br> И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИННИЦ В СЕДОНЕ</p>
         </div>
         <div>
           <button type="button" class="button-search-index">Поиск гостинницы в Седоне</button>
-          <form method="GET" action="https://echo.htmlacademy.ru">
-            <p><label for="arrival-date">Дата заезда:</label>
-              <input type="text" id="arrival-date" placeholder="дд мм гггг" autofocus>
-            <img src="img/calendar.svg" width="21" height="23" alt="Календарик"></p>
-            <!--Так понимаю у этих инпутов должен быть type="date" но тогда не пойму как календарик вставить в поле-->
-            <p><label for="date-of-departure">Дата выезда:</label>
+          <form class="arrival-form" method="GET" action="https://echo.htmlacademy.ru">
+            <div><label for="arrival-date">Дата заезда:</label>
+              <input type="text" id="arrival-date" placeholder="дд мм гггг">
+            <img src="img/calendar.svg" width="21" height="23" alt="Календарик">
+            </div>
+            <div><label for="date-of-departure">Дата выезда:</label>
               <input type="text" id="date-of-departure" placeholder="дд мм гггг">
-              <img src="img/calendar.svg" width="21" height="23" alt="Календарик"></p>
-            <p>
+              <img src="img/calendar.svg" width="21" height="23" alt="Календарик">
+            </div>
+            <div>
               <label>Взрослые:</label>
               <button type="button">
                 <img src="img/minus_form.svg" width="12" height="3" alt="Убавить">
               </button>
-              <output name="sum">1</output>
-                <button type="button">
-                  <img src="img/plus_form.svg" width="11" height="11" alt="Добавить">
-                </button>
-            </p>
-            <p>
+              <input name="sum">
+              <button type="button">
+                <img src="img/plus_form.svg" width="11" height="11" alt="Добавить">
+              </button>
+            </div>
+            <div>
               <label>Дети:</label>
               <button type="button">
               <img src="img/minus_form.svg" width="12" height="3" alt="Убавить">
               </button>
-              <output name="sum">1</output>
+              <input name="sum">
               <button type="button">
               <img src="img/plus_form.svg" width="11" height="11" alt="Добавить">
               </button>
-            </p>
-            <button type="submit">Найти</button>
+            </div>
+            <button type="submit" class="search-end">Найти</button>
           </form>
         </div>
         </section> 
 
-      <div> 
+      <div class="map"> 
         <!--Здесь будет блок с картой. (насколько я понял, будет вставляться скрипт JS)-->
       </div>
     </main>
 
     <footer>
-      <p>#VISITSEDONA</p>
-      <h2>ТЕЛ: +7(495)666-01-66</h2>
+      <div class="contacts">
+        <p>#VISITSEDONA</p>
+        <p>ТЕЛ: +7(495)666-01-66</p>
+      </div>
 
-      <div>
-        <ul>
+      <div class="social">
+        <ul class="social-list">
           <li><a href="#"><img src="img/twitter.svg" width="11" height="11" alt="Twitter"></a></li>
           <li><a href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Facebook"></a></li>
           <li><a href="#"><img src="img/youtube.svg" width="20" height="16" alt="YouTube"></a></li>
