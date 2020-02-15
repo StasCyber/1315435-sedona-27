@@ -51,19 +51,27 @@ a {
 
 .site-navigation {
     display: flex;
-    flex-direction: row;
     width: 1200px;
     justify-content: space-around;
     align-items: center;
 }
 
 .logo {
-    flex-shrink: 0;
-    /*Как сделать, чтобы лого выпадал из блока flex на блок с изображением*/
+    position: absolute;
+    z-index: 1;
+
 }
 
-.nav {
+.main-navigation li:nth-child(2) {
+    margin-right: 120px;
+}
 
+.main-navigation li:nth-child(3) {
+    margin-left: 120px;
+}
+
+.main-navigation li {
+    margin-top: 15px;
 }
 
 ul.site-navigation {
