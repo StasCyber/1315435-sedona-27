@@ -40,12 +40,26 @@ a {
 
 /*Header*/
 .main-header {
+    display: flex;
+    min-height: 56px;
     background-color: white;
+    justify-content: center;
+}
+
+.main-navigation {
+}
+
+.site-navigation {
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .logo {
-    /*не пойму как отцентрировать text-align и margin: 0 auto; не 
-    срабатывают. Так же и с фоном на главном экране.*/ 
+    flex-shrink: 0;
+    /*Как сделать, чтобы лого выпадал из блока flex на блок с изображением*/
 }
 
 .nav {
@@ -57,6 +71,7 @@ ul.site-navigation {
     padding: 0;
     list-style: none;
     font-weight: bold;
+
 }
 
 .site-navigation a {
@@ -79,21 +94,29 @@ ul.site-navigation {
 
 .welcome {
     height: 508px;
+    width: 1200px;
     background-color: gray;
     background-image: url("../img/background_photo.jpg");
     background-repeat: no-repeat;
-    width: auto;
+    background-position: top;
     position: relative;
+    left: 50%;
+    margin-left: -600px;
 }
 
 .intro-svg {
-    margin-top: 76px;
-    margin-left: 370px;
+    top: 76px;
+    margin: 0 auto;
+    left: 50%;
+    margin-left: -228px;
+    position: absolute;
 }
 
 .polygon {
     position: absolute;
-    bottom: -8px;
+    left: 50%;
+    margin-left: -600px;
+    bottom: -9px;
 }
 
 /*Блок преимуществ*/
@@ -102,11 +125,20 @@ ul.site-navigation {
     list-style: none;
 }
 
-.intro,
+.section1,
 .feauture-item,
 .recomend-item {
     text-align: center;
     background-color: #ffffff;
+}
+
+.section1 {
+    display: flex;
+    min-height: 216px;
+    min-width: 500px; /*почему когда я добавляю width: то блок съезжает влево
+    при этом свойство min-width: не позволяет переносить строку*/
+    flex-direction: column;
+    justify-content: center;
 }
 
 .feautures-list h3 {
@@ -133,9 +165,6 @@ ul.site-navigation {
 }
 
 /*Форма заявки на бронирование*/
-.form {
-    text-align: center;
-}
 
 button {
     font: inherit;
@@ -147,6 +176,77 @@ button {
     color: #ffffff;
     vertical-align: middle;
     border: none;
+}
+
+.pre-form {
+    display: flex;
+    min-height: 291px; 
+    /*почему остальные элементы не вылазят за ширину кнопки*/
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    /*временно*/
+    background-color: #81b3d2;
+}
+
+.pre-form button {
+    width: 568px;
+    height: 86px;
+    margin-bottom: 0;
+}
+
+.pre-form p:first-child {
+    margin-bottom: 0;
+}
+
+.pre-form p:nth-child(2) {
+    margin-top: 0;
+}
+
+.arrival-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 568px;
+    height: 395px;
+    background-color: #ebebeb;
+    margin: 0 auto;
+}
+
+.form-fields {
+    display: flex;
+    width: 458px;
+    height: 172px;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 55px;
+}
+
+.long-field,
+.short-field {
+    height: 38px;
+}
+
+.short-field .input {
+    width: 346px;
+}
+
+.short-field {
+    width: 226px;
+}
+
+.short-field .input {
+    width: 114px;
+}
+
+.search-end {
+    width: 458px;
+    height: 58px;
+    margin-bottom: 55px;
 }
 
 .button-search-index {
