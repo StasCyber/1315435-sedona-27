@@ -10,12 +10,12 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="logo">
-          <img src="img/logo.svg" width="138" height="71" alt="Доготип">
-        </a>
         <ul class="site-navigation">
           <li class="menu-item"><a href="info.html">Информация</a></li>
           <li class="menu-item"><a href="galery.html">Фото и видео</a></li>
+          <li><a class="logo">
+            <img src="img/logo.svg" width="138" height="70" alt="Доготип">
+              </a></li>
           <li class="menu-item"><a href="siteMap.html">Карта штата</a></li>
           <li class="menu-item"><a href="hotels.html">Гостинницы</a></li>
         </ul>
@@ -24,14 +24,16 @@
 
     <main>
       <section class="welcome">
-        <h2 class="visually-hidden">Welcome</h2> 
-        <img class="intro-svg" src="img/welcome.svg" width="458" height="352" alt="Приветствие на главном экране">
+        <h2 class="visually-hidden">Welcome</h2>
+        <div class="intro-svg"> 
+          <img src="img/welcome.svg" width="458" height="352" alt="Приветствие на главном экране">
+        </div>
         <div class="polygon">
           <img src="img/polygon.svg" width="1200" height="57" alt="Разделитель главного экрана">
         </div>
       </section>  
 
-      <section class="intro">
+      <section class="section1">
         <h1>Седона - небольшой городок, заслуживающий большего!</h1>
         <p>Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон.</p>
       </section>
@@ -107,38 +109,40 @@
         <div class="pre-form">
           <p>ЗАИНТЕРЕСОВАЛИСЬ?</p>
           <p>УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, <br> И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИННИЦ В СЕДОНЕ</p>
-        </div>
-        <div>
           <button type="button" class="button-search-index">Поиск гостинницы в Седоне</button>
+        </div>
+        <div class="form-wrap">
           <form class="arrival-form" method="GET" action="https://echo.htmlacademy.ru">
-            <div><label for="arrival-date">Дата заезда:</label>
-              <input type="text" id="arrival-date" placeholder="дд мм гггг">
-            <img src="img/calendar.svg" width="21" height="23" alt="Календарик">
-            </div>
-            <div><label for="date-of-departure">Дата выезда:</label>
-              <input type="text" id="date-of-departure" placeholder="дд мм гггг">
+            <div class="form-fields"> 
+              <div class="long-field"><label for="arrival-date">Дата заезда:</label>
+                <input type="text" id="arrival-date" placeholder="дд мм гггг">
               <img src="img/calendar.svg" width="21" height="23" alt="Календарик">
-            </div>
-            <div>
-              <label>Взрослые:</label>
-              <button type="button">
+              </div>
+              <div class="long-field"><label for="date-of-departure">Дата выезда:</label>
+                <input type="text" id="date-of-departure" placeholder="дд мм гггг">
+                <img src="img/calendar.svg" width="21" height="23" alt="Календарик">
+              </div>
+              <div class="short-field">
+                <label>Взрослые:</label>
+                <button type="button">
+                  <img src="img/minus_form.svg" width="12" height="3" alt="Убавить">
+                </button>
+                <input name="sum">
+                <button type="button">
+                  <img src="img/plus_form.svg" width="11" height="11" alt="Добавить">
+                </button>
+              </div>
+              <div class="short-field">
+                <label>Дети:</label>
+                <button type="button">
                 <img src="img/minus_form.svg" width="12" height="3" alt="Убавить">
-              </button>
-              <input name="sum">
-              <button type="button">
+                </button>
+                <input name="sum">
+                <button type="button">
                 <img src="img/plus_form.svg" width="11" height="11" alt="Добавить">
-              </button>
-            </div>
-            <div>
-              <label>Дети:</label>
-              <button type="button">
-              <img src="img/minus_form.svg" width="12" height="3" alt="Убавить">
-              </button>
-              <input name="sum">
-              <button type="button">
-              <img src="img/plus_form.svg" width="11" height="11" alt="Добавить">
-              </button>
-            </div>
+                </button>
+              </div>
+            </div> 
             <button type="submit" class="search-end">Найти</button>
           </form>
         </div>
