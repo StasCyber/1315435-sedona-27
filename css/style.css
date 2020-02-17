@@ -1,3 +1,7 @@
+html {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -12,6 +16,10 @@ body {
     
     background-position: top center;
     background-repeat: no-repeat;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
 }
 
 .visually-hidden {
@@ -96,10 +104,6 @@ ul.site-navigation {
 }
 
 /*Главный экран*/
-.welcome section {
-    margin: 0 auto;
-}
-
 .welcome {
     height: 508px;
     width: 1200px;
@@ -108,8 +112,7 @@ ul.site-navigation {
     background-repeat: no-repeat;
     background-position: top;
     position: relative;
-    left: 50%;
-    margin-left: -600px;
+    margin: 0 auto;
 }
 
 .intro-svg {
@@ -122,12 +125,34 @@ ul.site-navigation {
 
 .polygon {
     position: absolute;
-    left: 50%;
-    margin-left: -600px;
+    margin: 0 auto;
     bottom: -9px;
 }
 
 /*Блок преимуществ*/
+
+.section1 {
+    min-height: 216px;
+    
+}
+
+.section1-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 520px;
+    margin: 0 auto;
+    padding-top: 59px;
+    padding-bottom: 51px;
+}
+
+.section1-text p:first-child {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    margin-top: 0;
+}
+
 .feautures-list,
 .recomend-list {
     list-style: none;
@@ -138,15 +163,6 @@ ul.site-navigation {
 .recomend-item {
     text-align: center;
     background-color: #ffffff;
-}
-
-.section1 {
-    display: flex;
-    min-height: 216px;
-    min-width: 500px; /*почему когда я добавляю width: то блок съезжает влево
-    при этом свойство min-width: не позволяет переносить строку*/
-    flex-direction: column;
-    justify-content: center;
 }
 
 .feautures-list h3 {
@@ -172,7 +188,7 @@ ul.site-navigation {
     color: #000000;
 }
 
-/*Форма заявки на бронирование*/
+/*Раздел перед формой и кнопка заявки на бронирование*/
 
 button {
     font: inherit;
@@ -213,25 +229,24 @@ button {
     margin-top: 0;
 }
 
+/*Форма заявки на бронирование*/
 .arrival-form {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     width: 568px;
-    height: 395px;
-    background-color: #ebebeb;
+    min-height: 395px;
+    /*временно*/
+    background-color: #f8f8f8;
     margin: 0 auto;
+    padding: 55px;
 }
 
 .form-fields {
     display: flex;
     width: 458px;
-    height: 172px;
-    flex-direction: column;
-    justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 55px;
 }
 
 .long-field,
@@ -251,10 +266,9 @@ button {
     width: 114px;
 }
 
-.search-end {
+.button-search {
     width: 458px;
     height: 58px;
-    margin-bottom: 55px;
 }
 
 .button-search-index {
@@ -277,28 +291,83 @@ button {
     font-weight: bold;
     border: none;
     background-color: #f2f2f2;
+    width: 346px;
+    border: 2px solid transparent;
+    right: 0;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 14px;
+}
 
+.long-field:first-child input {
+    margin-left: 12px;
+}
+
+.long-field:nth-child(2) input {
+    margin-left: 8px;
+    
+}
+
+.long-field:nth-child(2) {
+    margin-top: 29px;
+}
+
+.long-field img{
+    position: absolute;
+    right: 9px;
+    top: 8px;
+    bottom: 8px;
+}
+
+.long-field,
+.short-field {
+    position: relative;
+    height: 38px;
+}
+
+.short-field {
+    display: flex;
+    margin-top: 29px;
 }
 
 .arrival-form input:hover {
     background-color: #ebebeb;
+    border: 2px solid transparent;
 }
 
 .arrival-form input:focus {
     background-color: #ffffff;
     border: 2px solid #e5e5e5;
+    outline: none;
 }
 
-.search-end {
+.adults,
+.children {
+    width: 38px;
+    height: 38px;
+    background: #f2f2f2;
+    border: none;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0;
+
+}
+
+.button-search {
     background-color: #81B3D2;
+    border: 2px solid transparent;
 }
 
-.search-end:hover,
-.search-end:focus, {
+.button-search:hover,
+.button-search:focus, {
     background-color: #669EC0;
+    outline: none;
+    border: 2px solid #e5e5e5;
 }
 
-.search-end:active{
+.button-search:active{
     background-color: #5496BD;
     color: #87B5D1;
 }
@@ -309,6 +378,32 @@ button {
 
 
 /*Footer*/
+
+.footer {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    padding-right: 101px;
+    padding-left: 129px;
+    background-color: #ffffff;
+}
+
+.contacts {
+    width: 252px;
+    margin-right: 162px;
+}
+
+.social {
+    width: 151px;
+}
+
+.academy {
+    margin-left: auto;
+    width: 213px;
+}
+
 .contacts p {
     font-size: 21px;
     font-weight: bold;
@@ -327,12 +422,59 @@ ul.social-list:focus  {
 
 ul.social-list:active {
     background-color: #5496BD;
-    /*не понятно, как задать затемнение белого на иконке при активации*/
 }
 
 /*Внутренняя страница - отели*/
 .site-navigation a:visited {
     color: #766357;
+    /*как сделать отмеченной ссылку только на странице Отели, но не на главной*/
+}
+
+.catalog {
+    width: 1200px;
+}
+
+.catalog-items {
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 72px;
+    padding-right: 72px;
+}
+
+.catalog-items img {
+    margin-right: 30px;
+}
+
+.inner-item1 {
+    width: 258px;
+}
+
+.inner-item1 h3 {
+    margin-top: 0px;
+    /*непонятно, как выровнять верх текста h3 по одной линии с изображением*/
+}
+
+.buttons-item1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons-item1 button{
+    padding: 8px 16px;
+}
+
+.inner-item2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-left: auto;
+}
+
+.inner-item2 p:last-child {
+    padding: 8px 16px;
+    background-color: #F2F2F2;
 }
 
 .results ul,
