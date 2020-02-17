@@ -9,13 +9,13 @@
 </head>
   <body class="inner-page">
     <header class="main-header">
+      <a class="logo">
+        <img src="img/logo.svg" width="138" height="70" alt="Доготип">
+      </a>
       <nav class="main-navigation">
         <ul class="site-navigation">
           <li class="menu-item"><a href="info.html">Информация</a></li>
           <li class="menu-item"><a href="galery.html">Фото и видео</a></li>
-          <li><a class="logo">
-            <img src="img/logo.svg" width="138" height="70" alt="Доготип">
-          </a></li>
           <li class="menu-item"><a href="siteMap.html">Карта штата</a></li>
           <li class="menu-item"><a href="hotels.html">Гостинницы</a></li>
         </ul>
@@ -23,8 +23,7 @@
     </header>
 
     <main>  
-      <section class="filters">
-        <h2 сlass="visually-hidden">Фильтр жилья</h2>   
+      <section class="filters">  
         <!--Здесь будет фильтр жилья-->   
       </section>
 
@@ -45,57 +44,79 @@
     -->
 
       <section class="catalog">
-        <h2 class="visually">Список домов для аренды</h2>
+        <h2 class="visually-hidden">Список домов для аренды</h2>
         <ul>
-            <li>
+            <li class="catalog-items">
               <img src="img/amara.jpg" width="135" height="90" alt="Гостинница Amara Resort & SPA">
-              <h3>AMARA RESORT & SPA</h3>
-              <p>ГОСТИННИЦА</p>
-              <p>От 4000 р.</p>
-              <p><button type="button" class="more">Подробнее</button></p>
-              <p><button type="button" class="reserve">Забронировать</button></p>
-              <p>Рейтинг: 8,5</p>
-              <p>
-                <span><img src="img/star.svg" width="19" height="17" alt="Звёздочка"></span>
-                <span><img src="img/star.svg" width="19" height="17" alt="Звёздочка"></span>
-                <span><img src="img/star.svg" width="19" height="17" alt="Звёздочка"></span>
-                <span><img src="img/star.svg" width="19" height="17" alt="Звёздочка"></span>
-              </p>
+              <div class="inner-item1">
+                <h3>AMARA RESORT & SPA</h3>
+                <div class="text-item1">
+                  <p>ГОСТИННИЦА</p>
+                  <p>От 4000 р.</p>
+                </div>
+                <div class="buttons-item1">
+                  <button type="button" class="more">Подробнее</button>
+                  <button type="button" class="reserve">Забронировать</button>
+                </div>
+              </div>
+              <div class="inner-item2">
+                <p>
+                  <span><img src="img/star.svg" width="19" height="17" alt="Звёздочка"></span>
+                  <span><img src="img/star.svg" width="19" height="17" alt="Звёздочка"></span>
+                  <span><img src="img/star.svg" width="19" height="17" alt="Звёздочка"></span>
+                  <span><img src="img/star.svg" width="19" height="17" alt="Звёздочка"></span>
+                </p>
+                <p>Рейтинг: 8,5</p>
+              </div>
             </li>
-            <li>
+            <li class="catalog-items">
               <img src="img/desert.jpg" width="135" height="90" alt="Гостинница Amara Resort & SPA">
-              <h3>DESERT QUAIL INN</h3>
-              <p>МОТЕЛЬ</p>
-              <p>От 3000 р.</p>
-              <p><button type="button" class="more">Подробнее</button></p>
-              <p><button type="button" class="reserve">Забронировать</button></p>
-              <p>Рейтинг: 8,9</p>
-              <p>
-                <span><img src="img/star.svg" width="19" height="17" alt="Звёздочка"></span>
-                <span><img src="img/star.svg" width="19" height="17" alt="Звёздочка"></span>
-                <span><img src="img/star.svg" width="19" height="17" alt="Звёздочка"></span>
-              </p>
+              <div class="inner-item1"> 
+                <h3>DESERT QUAIL INN</h3>
+                <div class="text-item1">
+                  <p>МОТЕЛЬ</p>
+                  <p>От 3000 р.</p>
+                </div>
+                <div class="buttons-item1">
+                  <button type="button" class="more">Подробнее</button>
+                  <button type="button" class="reserve">Забронировать</button>
+                </div>
+              </div>
+              <div class="inner-item2">
+                <p>
+                  <span><img src="img/star.svg" width="19" height="17" alt="Звёздочка"></span>
+                  <span><img src="img/star.svg" width="19" height="17" alt="Звёздочка"></span>
+                  <span><img src="img/star.svg" width="19" height="17" alt="Звёздочка"></span>
+                </p>
+                <p>Рейтинг: 8,9</p>
+              </div>
             </li>
-            <li>
+            <li class="catalog-items">
               <img src="img/amara.jpg" width="135" height="90" alt="Гостинница Amara Resort & SPA">
-              <h3>VILLAS AT POCO DIABLO</h3>
-              <p>АПАРТАМЕНТЫ</p>
-              <p>От 2000 р.</p>
-              <p><button type="button" class="more">Подробнее</button></p>
-              <p><button type="button" class="reserve">Забронировать</button></p>
-              <p>Рейтинг: 9.2</p>
-              <p>
-                <span><img src="img/star.svg" width="19" height="17" alt="Звёздочка"></span>
-                <span><img src="img/star.svg" width="19" height="17" alt="Звёздочка"></span>
-              </p>
+              <div class="inner-item1">
+                <h3>VILLAS AT POCO DIABLO</h3>
+                <div class="text-item1">
+                  <p>АПАРТАМЕНТЫ</p>
+                  <p>От 2000 р.</p>
+                </div>                
+                <div class="buttons-item1">
+                  <button type="button" class="more">Подробнее</button>
+                  <button type="button" class="reserve">Забронировать</button>
+                </div>
+              </div>
+              <div class="inner-item2">
+                <p>
+                  <span><img src="img/star.svg" width="19" height="17" alt="Звёздочка"></span>
+                  <span><img src="img/star.svg" width="19" height="17" alt="Звёздочка"></span>
+                </p>
+                <p>Рейтинг: 9.2</p>
+              </div>
             </li>
         </ul>
       </section>
-
-
     </main>    
     
-    <footer>
+    <footer class="footer">
       <div class="contacts">
         <p>#VISITSEDONA</p>
         <p>ТЕЛ: +7(495)666-01-66</p>
@@ -109,10 +130,12 @@
         </ul>
       </div>
 
-      <p>WEBSITE BY</p>
-      <a class="footer-logo" href="http://htmlacademy.ru">
-        <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML_Academy">
-      </a>
-    </footer>
+      <div class="academy">
+        <p>WEBSITE BY</p>
+        <a class="footer-logo" href="http://htmlacademy.ru">
+          <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML_Academy">
+        </a>
+      </div>
+    </footer>  
   </body>
 </html>
