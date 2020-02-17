@@ -29,13 +29,16 @@
           <img src="img/welcome.svg" width="458" height="352" alt="Приветствие на главном экране">
         </div>
         <div class="polygon">
-          <img src="img/polygon.svg" width="1200" height="57" alt="Разделитель главного экрана">
+          <img src="img/polygon.svg" width="1200" height="58" alt="Разделитель главного экрана">
         </div>
       </section>  
 
       <section class="section1">
-        <h1>Седона - небольшой городок, заслуживающий большего!</h1>
-        <p>Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон.</p>
+        <h2 class="visually-hidden">Несколько причин, почему стоит выбрать Седону</h2>
+        <div class="section1-text">
+          <p>Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+          <p>Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон.</p>
+        </div>
       </section>
 
       <section class="feautures">
@@ -115,35 +118,31 @@
           <form class="arrival-form" method="GET" action="https://echo.htmlacademy.ru">
             <div class="form-fields"> 
               <div class="long-field"><label for="arrival-date">Дата заезда:</label>
-                <input type="text" id="arrival-date" placeholder="дд мм гггг">
+                <input type="text" id="arrival-date" value="24 апреля 2020">
               <img src="img/calendar.svg" width="21" height="23" alt="Календарик">
               </div>
               <div class="long-field"><label for="date-of-departure">Дата выезда:</label>
-                <input type="text" id="date-of-departure" placeholder="дд мм гггг">
+                <input type="text" id="date-of-departure" value="4 июля 2020">
                 <img src="img/calendar.svg" width="21" height="23" alt="Календарик">
               </div>
               <div class="short-field">
                 <label>Взрослые:</label>
-                <button type="button">
-                  <img src="img/minusForm.svg" width="12" height="3" alt="Убавить">
-                </button>
-                <input name="sum">
-                <button type="button">
-                  <img src="img/plusForm.svg" width="11" height="11" alt="Добавить">
-                </button>
+                <div class="adult-picker">
+                  <button class="symbol-minus" type="button" value="-"></button>
+                  <input class="adults" name="sum">
+                  <button class="symbol-plus" type="button" value="+"></button>
+                </div>
               </div>
               <div class="short-field">
                 <label>Дети:</label>
-                <button type="button">
-                <img src="img/minusForm.svg" width="12" height="3" alt="Убавить">
-                </button>
-                <input name="sum">
-                <button type="button">
-                <img src="img/plusForm.svg" width="11" height="11" alt="Добавить">
-                </button>
+                <div class="children-picker">
+                  <button class="symbol-minus" type="button" value="-"></button>
+                  <input class="children" name="sum">
+                  <button class="symbol-plus" type="button" value="+"></button>
+                </div>
               </div>
             </div> 
-            <button type="submit" class="search-end">Найти</button>
+            <button type="submit" class="button-search">Найти</button>
           </form>
         </div>
         </section> 
@@ -153,7 +152,7 @@
       </div>
     </main>
 
-    <footer>
+    <footer class="footer">
       <div class="contacts">
         <p>#VISITSEDONA</p>
         <p>ТЕЛ: +7(495)666-01-66</p>
@@ -167,10 +166,12 @@
         </ul>
       </div>
 
-      <p>WEBSITE BY</p>
-      <a class="footer-logo" href="http://htmlacademy.ru">
-        <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML_Academy">
-      </a>
+      <div class="academy">
+        <p>WEBSITE BY</p>
+        <a class="footer-logo" href="http://htmlacademy.ru">
+          <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML_Academy">
+        </a>
+      </div>
     </footer>  
   </body>
 </html>
