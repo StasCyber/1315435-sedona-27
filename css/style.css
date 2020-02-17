@@ -460,10 +460,6 @@ ul.social-list:active {
     justify-content: space-between;
 }
 
-.buttons-item1 button{
-    padding: 8px 16px;
-}
-
 .inner-item2 {
     display: flex;
     flex-direction: column;
@@ -496,6 +492,7 @@ ul.social-list:active {
     font-size: 14px;
     font-weight: bold;
     line-height: 21px;
+    padding: 8px 16px;
 }
 
 .more {
