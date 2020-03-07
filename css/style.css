@@ -130,18 +130,19 @@ ul.site-navigation {
 /*Блок преимуществ*/
 
 .section1 {
-    min-height: 216px;
-    
+    padding-top: 59px;
+    padding-bottom: 51px;
+    padding-left: 340px;
+    padding-right: 340px;
+    width: 1200px;
+    margin: 0 auto;
 }
 
 .section1-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 520px;
     margin: 0 auto;
-    padding-top: 59px;
-    padding-bottom: 51px;
 }
 
 .section1-text p:first-child {
@@ -151,9 +152,77 @@ ul.site-navigation {
     margin-top: 0;
 }
 
+.feautures {
+    width: 1200px;
+    margin: 0 auto;  
+}
+
+.block-text,
+.feauture-item li {
+    padding: 50px 44px;
+    width: 400px;
+}
+
+.block-text h3 {
+    width: 160px;
+    margin: 0 auto;
+}
+
+.block4 p {
+    width: 258px;
+    margin: 0 auto;
+}
+
+.block-text h3,
+.block-text p {
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.text-white h3,
+.text-white p {
+    color: #ffffff;
+}
+
+.text-white {
+    background-color: #81B3D2;
+}
+
+.feauture-item p:last-child {
+    margin-bottom: 0px;
+}
+
+ol.feautures-list {
+    padding: 0;
+    margin: 0;
+}
+
+.feauture-item figure {
+    margin: 0;
+    padding-bottom: 0;
+}
+
+.feauture-item .block {
+    display: flex;
+}
+
+.recomend-list li{
+    padding: 50px 56px;
+}
+
 .feautures-list,
 .recomend-list {
     list-style: none;
+}
+
+.block4 ul,
+.recomend-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
 }
 
 .section1,
@@ -172,21 +241,20 @@ ul.site-navigation {
     line-height: 21px;
 }
 
-.feautures-list .block {
-    background-color: #81b3d2;
-}
 
-.pre-form {
-    text-align: center;
-}
+/*Раздел перед формой и кнопка заявки на бронирование*/
 .pre-form p:first-child {
     font-size: 30px;
     line-height: 24px;
     font-weight: bold;
     color: #000000;
+    margin-bottom: 38px;
+    margin-top: 0;
 }
 
-/*Раздел перед формой и кнопка заявки на бронирование*/
+.pre-form p {
+    margin-bottom: 68px;
+}
 
 button {
     font: inherit;
@@ -201,16 +269,11 @@ button {
 }
 
 .pre-form {
-    display: flex;
-    min-height: 291px; 
-    /*почему остальные элементы не вылазят за ширину кнопки*/
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    /*временно*/
-    background-color: #81b3d2;
+    text-align: center;
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 36px;
+    background-color: #cccccc;
 }
 
 .pre-form button {
@@ -219,26 +282,30 @@ button {
     margin-bottom: 0;
 }
 
-.pre-form p:first-child {
-    margin-bottom: 0;
+/*Форма заявки на бронирование и карта*/
+.map {
+    position: relative;
+    width: 1200px;
+    height: 433px;
+    margin: 0 auto;
+    background-image: url(../img/map.jpg);
 }
 
-.pre-form p:nth-child(2) {
-    margin-top: 0;
-}
-
-/*Форма заявки на бронирование*/
 .arrival-form {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     width: 568px;
-    min-height: 395px;
-    /*временно*/
-    background-color: #f8f8f8;
+    background-color: #f8f8f8; /*временно*/
     margin: 0 auto;
     padding: 55px;
+}
+
+.form-wrap {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .form-fields {
@@ -246,41 +313,39 @@ button {
     flex-wrap: wrap;
 }
 
-.long-field,
-.short-field {
-    height: 38px;
-}
-
 /*широкие поля (дата заезда и дата выезда)*/
 
 .row-form {
-    margin-top: 29px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 29px;
 }
 
-.row-form:first-child {
-    margin-top: 0;
-}
-
-.long-field:first-child input {
-    margin-left: 12px;
-}
-
-.long-field:nth-child(2) input {
-    margin-left: 8px;
-    
+.row-form:last-child {
+    margin-bottom: 54px;
 }
 
 .long-field,
 .short-field {
     position: relative;
-    height: 38px;
 }
 
-.long-field img{
+.long-field svg {
     position: absolute;
     right: 9px;
     top: 8px;
     bottom: 8px;
+}
+
+.long-field path:hover,
+.long-field path:focus {
+    fill: #000000;
+}
+
+.long-field path:active {
+    fill: #81B3D2;
 }
 
 .arrival-form input:hover {
@@ -295,31 +360,24 @@ button {
 }
 
 /*короткие поля (взрослые и дети)*/
-.row-form:last-child {
-    display: flex;
-}
 
 .short-field {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.field-adult label {
-    margin-right: 32px;
-    align-self: center;
+.short-field:first-child {
+    flex-grow: 3;
+    margin-right: 38px;
 }
 
-.field-children label {
-    margin-right: 26px;
-    align-self: center;
-}
-
-.field-adult {
-    margin-right: 54px;
+.short-field:last-child {
+    flex-grow: 2;
 }
 
 .adult-picker,
 .children-picker {
-    height: 38px;
     background-color: #f2f2f2;
 }
 
@@ -344,7 +402,6 @@ button {
 
 .minus,
 .plus {
-    vertical-align: middle;
     width: 38px;
     height: 38px;
     border: none;
@@ -403,18 +460,19 @@ button {
     padding-top: 6px;
     padding-bottom: 6px;
     padding-left: 14px;
+    padding-right: 36px;
 }
 
 /*кнопка "найти"*/
 .button-search {
-    width: 458px;
+    width: 100%;
     height: 58px;
     background-color: #81B3D2;
     border: 2px solid transparent;
 }
 
 .button-search:hover,
-.button-search:focus, {
+.button-search:focus {
     background-color: #669EC0;
     outline: none;
     border: 2px solid #e5e5e5;
@@ -525,7 +583,40 @@ ul.social-list {
     width: 1200px;
     margin: 0 auto;
     display: flex;
-    padding: 29px 30px 32px 30px;
+    padding: 29px 72px 32px 72px;
+}
+
+.results h2 {
+    margin: 0;
+    margin-right: 48px;
+}
+
+.results h3 {
+    margin: 0;
+    margin-right: 40px;
+}
+
+.results ul {
+    margin: 0;
+    padding: 0;
+}
+
+.results li {
+    margin-right: 33px;
+    border-bottom: 1px dotted #81B3D2;    
+}
+
+.list-filter a {
+    padding: 30px 0px;
+    color: #B2B2B2;
+}
+
+.results .res-active {
+    border: none;
+}
+
+.res-active a {
+    color: #81B3D2;
 }
 
 .list-filter {
@@ -533,9 +624,18 @@ ul.social-list {
     justify-content: space-between;
 }
 
+.results-arrows {
+    margin-left: auto;
+}
+
 .catalog {
     width: 1200px;
     margin: 0px auto;
+}
+
+.catalog ul {
+    margin: 0;
+    padding: 0;
 }
 
 .catalog p {
@@ -705,7 +805,7 @@ ul.social-list {
 
 .filter-range {
     width: 330px;
-   
+    box-sizing: content-box;
     color: #ffffff;
     text-transform: uppercase;
     margin-left: auto;
@@ -843,3 +943,7 @@ ul.social-list {
   
     background: #ffffff;
 }
+
+/* 1 проверить все элементы сайта на переполнение */
+/* 2 интерактивные элементы по переходу через таб должны подсвечиваться */
+/* 3 сделать на странице отели, чтобы подсвечивались элементы по переходу через TAB */
