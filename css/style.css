@@ -407,6 +407,7 @@ button {
     border: none;
     position: relative;
     background: #f2f2f2;
+    cursor: pointer;
 }
 
 .minus::before,
@@ -415,7 +416,7 @@ button {
     content: " ";
     width: 12px;
     height: 3px;
-    background-color: black;
+    background-color: #A9A9A9;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -426,10 +427,25 @@ button {
     content: " ";
     width: 12px;
     height: 3px;
-    background-color: black;
+    background-color: #A9A9A9;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.minus:hover::before,
+.minus:focus::before,
+.plus:hover::before,
+.plus:focus::before,
+.plus:hover::after,
+.plus:focus::after {
+    background-color: black;
+}
+
+.minus:active::before,
+.plus:active::before,
+.plus:active::after {
+    background-color: #81B3D2;
 }
 
 /*кнопка "поиск гостинницы в седоне" */
@@ -448,7 +464,7 @@ button {
 }
 
 /*параметры полей ввода в форме*/
-.arrival-form input[type="text"] {
+.long-field input {
     font: inherit;
     text-transform: uppercase;
     font-weight: bold;
