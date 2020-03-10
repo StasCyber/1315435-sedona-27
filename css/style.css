@@ -211,6 +211,10 @@ ol.feautures-list {
     display: flex;
 }
 
+.block-img2 {
+    flex-direction: row-reverse;
+}
+
 .recomend-list li{
     padding: 50px 56px;
 }
