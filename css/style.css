@@ -243,6 +243,13 @@ ol.feautures-list {
 
 
 /*Раздел перед формой и кнопка заявки на бронирование*/
+.pre-form {
+    text-align: center;
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 36px;
+}
+
 .pre-form p:first-child {
     font-size: 30px;
     line-height: 24px;
@@ -256,6 +263,37 @@ ol.feautures-list {
     margin-bottom: 68px;
 }
 
+/*кнопка "поиск гостинницы в седоне" */
+.button-search-index {
+    display: flex;
+    width: 568px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.pre-form a {
+    font: inherit;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    background-color: #766357;
+    color: #ffffff;
+    flex-grow: 1;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.button-search-index a:hover,
+.button-search-index a:focus {
+    background-color: #604E43;
+}
+
+.button-search-index a:active {
+    background-color: #503E33;
+    color: #847870;
+}
+
 button {
     font: inherit;
     text-transform: inherit;
@@ -266,20 +304,6 @@ button {
     color: #ffffff;
     vertical-align: middle;
     border: none;
-}
-
-.pre-form {
-    text-align: center;
-    width: 1200px;
-    margin: 0 auto;
-    padding-top: 36px;
-    background-color: #cccccc;
-}
-
-.pre-form button {
-    width: 568px;
-    height: 86px;
-    margin-bottom: 0;
 }
 
 /*Форма заявки на бронирование и карта*/
@@ -446,21 +470,6 @@ button {
 .plus:active::before,
 .plus:active::after {
     background-color: #81B3D2;
-}
-
-/*кнопка "поиск гостинницы в седоне" */
-.button-search-index {
-    background-color: #766357;
-}
-
-.button-search-index:hover,
-.button-search-index:focus {
-    background-color: #604E43;
-}
-
-.button-search-index:active {
-    background-color: #503E33;
-    color: #847870;
 }
 
 /*параметры полей ввода в форме*/
@@ -630,7 +639,7 @@ ul.social-list {
 .list-filter a:hover,
 .list-filter a:focus {
     color: #81b3d2;
-0} 
+} 
 
 .list-filter a:active {
     color: black;
