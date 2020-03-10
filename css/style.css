@@ -50,13 +50,14 @@ a {
 .main-header {
     display: flex;
     min-height: 56px;
+    width: 1200px;
     background-color: white;
     justify-content: center;
+    margin: 0 auto;
 }
 
 .site-navigation {
     display: flex;
-    width: 1200px;
     justify-content: space-between;
     align-items: center;
 }
