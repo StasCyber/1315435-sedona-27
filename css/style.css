@@ -250,14 +250,14 @@ ol.feautures-list {
     width: 800px;
     background-image: url("../img/layer-ten.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 105%;
 }
 
 .feauture-img2 {
     width: 800px;
     background-image: url("../img/layer-five.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 105%;
 }
 
 /*Раздел перед формой и кнопка заявки на бронирование*/
