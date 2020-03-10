@@ -246,6 +246,19 @@ ol.feautures-list {
     line-height: 21px;
 }
 
+.feauture-img1 {
+    width: 800px;
+    background-image: url("../img/layer-ten.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.feauture-img2 {
+    width: 800px;
+    background-image: url("../img/layer-five.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 /*Раздел перед формой и кнопка заявки на бронирование*/
 .pre-form {
