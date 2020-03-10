@@ -850,6 +850,7 @@ ul.social-list {
 .label-checkbox{
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 .label-checkbox::before{
     content: "";
