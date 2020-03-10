@@ -356,19 +356,19 @@ button {
     position: relative;
 }
 
-.long-field svg {
+.long-field a {
     position: absolute;
     right: 9px;
     top: 8px;
     bottom: 8px;
 }
 
-.long-field path:hover,
-.long-field path:focus {
+.long-field a:hover path,
+.long-field a:focus path {
     fill: #000000;
 }
 
-.long-field path:active {
+.long-field a:active path {
     fill: #81B3D2;
 }
 
