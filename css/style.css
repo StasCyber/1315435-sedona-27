@@ -168,6 +168,10 @@ ul.site-navigation {
     margin: 0 auto;
 }
 
+.block4 .block-text{
+    background-color: #eeeeee;
+}
+
 .block4 p {
     width: 258px;
     margin: 0 auto;
@@ -260,7 +264,7 @@ ol.feautures-list {
 }
 
 .pre-form p {
-    margin-bottom: 68px;
+    margin-bottom: 54px;
 }
 
 /*кнопка "поиск гостинницы в седоне" */
