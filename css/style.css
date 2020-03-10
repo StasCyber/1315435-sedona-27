@@ -561,7 +561,7 @@ ul.social-list {
 
 .social-button:active {
     background-color: #5496BD;
-    opacity: 0.3;
+    opacity: 0.3; 
 }
 
 .icon-tw {
@@ -627,6 +627,19 @@ ul.social-list {
     color: #B2B2B2;
 }
 
+.list-filter a:hover,
+.list-filter a:focus {
+    color: #81b3d2;
+0} 
+
+.list-filter a:active {
+    color: black;
+}
+
+.list-filter li:active {
+    border: none;
+}
+
 .results .res-active {
     border: none;
 }
@@ -642,6 +655,18 @@ ul.social-list {
 
 .results-arrows {
     margin-left: auto;
+}
+
+.arrow-up:hover path,
+.arrow-up:focus path,
+.arrow-down:hover path,
+.arrow-down:focus path {
+    fill: black;
+}
+
+.arrow-up:active path,
+.arrow-down:active path {
+    fill: #81b3d2;
 }
 
 .catalog {
