@@ -6,7 +6,7 @@ body {
     margin: 0;
     padding: 0;
 
-    font-family: 'PT Sans', 'Arial', sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
 
     font-size: 14px;
     line-height: 26px;
@@ -81,6 +81,8 @@ ul.site-navigation {
 .site-navigation li {
     width: 23%;
     text-align: left;
+    padding-top: 14px;
+    padding-bottom: 16px;
 }
 
 .site-navigation li:nth-child(4n + 3) {
@@ -94,9 +96,6 @@ ul.site-navigation {
 
 .site-navigation a {
     color: #000000;
-    display: block;
-    padding-top: 14px;
-    padding-bottom: 16px;
 } 
 
 .site-navigation a:hover,
@@ -260,7 +259,6 @@ ol.feautures-list {
 .feauture-item,
 .recomend-item {
     text-align: center;
-    background-color: #ffffff;
 }
 
 .recomend-icon {
@@ -386,7 +384,7 @@ button {
 /*Форма заявки на бронирование и карта*/
 .map {
     position: relative;
-    height: 474px;
+    height: 597px;
     margin: 0 auto;
     background-image: url(../img/map.jpg);
 }
@@ -427,6 +425,10 @@ button {
     padding-bottom: 6px;
     padding-left: 2%;
     padding-right: 8%;
+}
+
+.long-field input::placeholder {
+    color: #000000;
 }
 
 .row-form:last-child {
@@ -586,13 +588,24 @@ button {
 /*Footer*/
 
 .footer {
+    position: relative;
+}
+
+.footer-wrap {
     display: flex;
     margin: 0 auto;
     padding-top: 30px;
     padding-bottom: 36px;
     padding-right: 101px;
     padding-left: 123px;
-    background-color: white;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.footer-wrap.main {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .contacts {
@@ -705,6 +718,7 @@ ul.social-list {
     padding-top: 8px;
     font-size: 12px;
     line-height: 18px;
+    font-weight: normal;
 }
 
 .results ul {
@@ -805,11 +819,24 @@ ul.social-list {
     margin-top: 6px;
 }
 
+.card-header {
+    color: #000000;
+}
+
+.card-header:hover,
+.card-header:focus {
+    color: #81b3d2;
+}
+
+.card-header:active {
+    color: #B3B3B3;
+}
+
 .card-description {
     display: flex;
 }
 
-.wrap-content h3 {
+.card-wrap h3 {
     margin: 0px;
 }
 
@@ -817,7 +844,7 @@ ul.social-list {
     margin-right: 8px;
 }
 
-.wrap-content p {
+.card-wrap p {
     margin-top: 10px;
     margin-bottom: 14px;
 }
@@ -1036,6 +1063,21 @@ ul.social-list {
     border: none;
 }
   
+.price-controls input[type=number]::-webkit-inner-spin-button, 
+.price-controls input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
+.price-controls input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.price-controls input[type="number"]:hover,
+.price-controls input[type="number"]:focus {
+    -moz-appearance: number-input;
+}
+
 .range-controls {
     position: relative;
     margin-bottom: 32px;
@@ -1086,6 +1128,7 @@ ul.social-list {
     padding: 6px 35px;
   
     font-size: 14px;
+    font-weight: normal;
     line-height: 20px;
     color: #ffffff;
     text-transform: uppercase;
