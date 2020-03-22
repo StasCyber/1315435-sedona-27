@@ -5,19 +5,12 @@ var expiredDate = popup.querySelector("[name=expired-date]");
 var adults = popup.querySelector("[name=adults]");
 var children = popup.querySelector("[name=children]");
 var form = popup.querySelector("form");
-var minus = popup.querySelector(".minus");
-var plus = popup.querySelector(".plus");
-var input = popup.querySelector("[id=adults]")
-
-minus.addEventListener("click", function(evt) {
-    evt.preventDefault();
-    input = input.value + 1;
-});
 
 link.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.toggle("form-close");
     popup.classList.remove("form-error");
+    // popup.classList.toggle("form-slider");
     enterDate.focus();
 });
 
