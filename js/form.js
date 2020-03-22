@@ -32,7 +32,6 @@ form.addEventListener("submit", function (evt) {
         console.log("Нужно ввести даты прибытия и отъезда");
         popup.classList.add("form-error");
     } else {
-        evt.preventDefault();
         console.log("Дата заезда: " + enterDate.value);
         console.log("Дата заезда: " + expiredDate.value);
         console.log("Количество взрослых: " + adults.value);
