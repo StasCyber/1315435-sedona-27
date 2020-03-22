@@ -10,19 +10,8 @@ link.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.toggle("form-close");
     popup.classList.remove("form-error");
-    // popup.classList.toggle("form-slider");
     enterDate.focus();
 });
-
-// link.addEventListener("click", function (evt) {
-//     if (popup.classList.contains("form-close")) {
-//         evt.preventDefault();
-//         popup.classList.remove("form-open");
-//     } else {
-//         evt.preventDefault();
-//         popup.classList.add("form-open");
-//     }
-// });
 
 form.addEventListener("submit", function (evt) {
     if (!enterDate.value || !expiredDate.value) {
