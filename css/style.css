@@ -420,10 +420,6 @@ ol.feautures-list {
     padding: 55px;
 }
 
-/* .form-slider {
-    display: none;
-} */
-
 .form-wrap {
     position: absolute;
     /* margin: 0 auto; */
@@ -1028,26 +1024,30 @@ ul.social-list {
     cursor: pointer;
     line-height: 21px;
 }
+
 .label-checkbox::before{
     content: "";
-    /* position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%); */
     width: 25px;
     height: 25px;
     background-image: url("../img/checkbox-off.svg");
     background-repeat: no-repeat;
     margin-right: 14px;
 }
+
 .form-checkbox:checked ~ .label-checkbox::before{
     background-image: url("../img/checkbox-on.svg");
 }
+
 .form-checkbox:disabled ~ .label-checkbox::before{
     background-image: url("../img/checkbox-off-disabled.svg");
 }
+
 .form-checkbox:checked:disabled ~ .label-checkbox::before{
     background-image: url("../img/checkbox-on-disabled.svg");
+}
+
+.focus-wrap:focus {
+    outline: 1px solid blue;
 }
 
 /* фильтр-ползунок */
