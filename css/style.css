@@ -1010,10 +1010,6 @@ ul.social-list {
     margin-bottom: 20px;
 }
 
-.label-checkbox::before:focus {
-    outline: blue;
-}
-
 .checkbox-wrap:last-child {
     margin-bottom: 0;
 }
@@ -1046,8 +1042,10 @@ ul.social-list {
     background-image: url("../img/checkbox-on-disabled.svg");
 }
 
-.focus-wrap:focus {
-    outline: 1px solid blue;
+.form-checkbox:focus+.label-checkbox::before,
+.form-checkbox:active+.label-checkbox::before {
+    /* outline: 2px solid blue; */
+    opacity: 0.7;
 }
 
 /* фильтр-ползунок */
